@@ -158,25 +158,18 @@ Included tests (service-level):
  
 ---
 
-## Sample requests (`orders.http`)
+## Screenshots
 
-```http
-@host = http://localhost:5000
-@cid = {{$guid}}
+**Swagger**
+<img width="1750" height="969" alt="image" src="https://github.com/user-attachments/assets/50533ade-4ebc-432f-b3e1-a1bbdb513dec" />
 
-### Default page
-GET {{host}}/orders
-X-Correlation-ID: {{cid}}
+**Postman**
+<img width="3056" height="1259" alt="image" src="https://github.com/user-attachments/assets/da59c7b6-5be4-4a73-a581-09fdd7394fa3" />
 
-### Filter by pharmacy + statuses + date range
-GET {{host}}/orders?pharmacyId=ph1&status=Pending&status=Shipped&from=2025-09-01&to=2025-09-03&sort=createdAt&dir=desc&page=1&pageSize=20
-X-Correlation-ID: {{cid}}
+**Logs**
+<img width="1783" height="559" alt="image" src="https://github.com/user-attachments/assets/63ffbdca-ea4f-43cb-aee4-764ecf931f54" />
 
-### Sort by totalCents ascending
-GET {{host}}/orders?sort=totalCents&dir=asc&page=1&pageSize=10
-X-Correlation-ID: {{cid}}
 
-### Bad input example (expect 400)
-GET {{host}}/orders?pageSize=101
-X-Correlation-ID: {{cid}}
-```
+
+
+
