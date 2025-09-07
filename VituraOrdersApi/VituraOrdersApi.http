@@ -1,0 +1,6 @@
+@VituraOrdersApi_HostAddress = http://localhost:5129
+
+GET {{VituraOrdersApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
