@@ -153,7 +153,7 @@ Included tests (service-level):
     * Introduce **IOrdersRepository** for data access (async CRUD/query methods); implement with EF Core or Dapper for SQL Server.
 * **FluentValidation** for richer input rules and consistent error messages.
 * **JWT authentication (Bearer)**: wire ASP.NET Core auth, add minimal policy, and enable Swagger auth.
-* **Rate limiting***: use ASP.NET Core rate limiting middleware `return 429`.
+* **Rate limiting**: use ASP.NET Core rate limiting middleware `return 429`.
 * **CORS Policy** if required.
  
 ---
